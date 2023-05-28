@@ -16,6 +16,13 @@
 - Diego Correa
 - Julio Cardenas
 
+## Features to test
+- Crear, editar y eliminar un post 
+- Crear y publicar una pagina 
+- Crear tags para asociarlas con los posts y paginas 
+- Autenticar a los usuarios  
+- Actualizar el menú principal 
+
 ## Exploratory testing
 
 40 exploratory tests
