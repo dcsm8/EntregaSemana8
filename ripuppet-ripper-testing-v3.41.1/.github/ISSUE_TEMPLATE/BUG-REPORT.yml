@@ -1,0 +1,80 @@
+name: "🐛 Bug Report"
+description: Create a new ticket for a bug.
+title: "🐛 [BUG] - <title>"
+labels: [
+  "bug"
+]
+body:
+  - type: textarea
+    id: expected-behaviour
+    attributes:
+      label: "Comportamiento esperado"
+      description: Por favor, ingrese una descripción detallada del comportamiento esperado
+      placeholder: Descripción breve y detallada del comportamiento esperado...
+    validations:
+      required: true
+  - type: textarea
+    id: current-behaviour
+    attributes:
+      label: "Comportamiento actual"
+      description: Por favor, ingrese una descripción detallada del comportamiento actual
+      placeholder: Descripción breve y detallada del comportamiento actual...
+    validations:
+      required: true
+  - type: textarea
+    id: reprod
+    attributes:
+      label: "Pasos a reproducir"
+      description: Please enter an explicit description of your issue
+      value: |
+        1. Ir a '...'
+        2. Hacer clic en '....'
+        3. Desplázate hasta '....'
+        4. Ver error
+      render: bash
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: "Evidencias"
+      description: If applicable, add screenshots to help explain your problem.
+      value: |
+        ![DESCRIPTION](LINK.png)
+      render: bash
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Logs"
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: bash
+    validations:
+      required: false
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: "Navegadores"
+      description: ¿En qué navegadores estás experimentando el problema?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+        - Opera
+    validations:
+      required: false
+  - type: dropdown
+    id: os
+    attributes:
+      label: "OS"
+      description: What is the impacted environment ?
+      multiple: true
+      options:
+        - Windows
+        - Linux
+        - Mac
+    validations:
+      required: false
