@@ -2,7 +2,7 @@ Feature: Iniciar sesion en Ghost
 
 @user1 @web
 Scenario: Usuario ingresa a la pagina de Ghost correctamente
-    Given I navigate to page "http://localhost:2368/ghost/#/signin"
+    Given I navigate to page "http://localhost:3002/ghost/#/signin"
     And I wait for 7 seconds
     When I enter email ghost "<GHOSTUSER>"
     And I wait for 2 seconds

@@ -2,7 +2,7 @@ Feature: Verificar que los enlaces internos y externos funcionan correctamente.
 
 @user1 @web
 Scenario: Como primer usuario verifico que los enlaces funcionan correctamente
-    Given I navigate to page "http://localhost:2368/ghost/#/signin"
+    Given I navigate to page "http://localhost:3002/ghost/#/signin"
     And I wait for 3 seconds
     When I enter email ghost "<GHOSTUSER>"
     And I wait for 2 seconds

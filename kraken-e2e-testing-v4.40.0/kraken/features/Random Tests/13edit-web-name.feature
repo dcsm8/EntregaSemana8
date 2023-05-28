@@ -2,7 +2,7 @@ Feature: Cambiar la configuración del sitio (por ejemplo, cambiar el nombre del
 
 @user1 @web
 Scenario: Como primer usuario edito la configuracion de la aplicacion
-    Given I navigate to page "http://localhost:2368/ghost/#/signin"
+    Given I navigate to page "http://localhost:3002/ghost/#/signin"
     And I wait for 3 seconds
     When I enter email ghost "<GHOSTUSER>"
     And I wait for 2 seconds
