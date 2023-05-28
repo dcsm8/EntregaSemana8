@@ -1,6 +1,10 @@
 # Week 8 - Pruebas automatizadas
 
+## Video Presentation and documents
+[https://drive.google.com/drive/u/0/folders/1mCsQE1EnH8fH8Ay89Khqq7hzyGHX_VyK](https://drive.google.com/drive/u/0/folders/1mCsQE1EnH8fH8Ay89Khqq7hzyGHX_VyK)
+
 ## Información del proyecto
+
 
 - University: Universidad de los Andes
 - Project: Automated testing of the Ghost CMS application
