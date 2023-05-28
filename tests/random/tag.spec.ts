@@ -62,4 +62,17 @@ test.describe("Tags Random", () => {
     expect(tagName).toBe(name);
     expect(tagDescription).toBe(description);
   });
+
+  test("Create tag - boundary", async () => {
+    tagPage.testName = "create-tag-boundary";
+    // Given
+    const { name: boundaryName, description: boundaryDescription } = TagDataGenerator.getBoundaryTagData();
+
+    // When
+    await tagPage.createTag(boundaryName, boundaryDescription);
+
+    // Then
+    await tagPage.expectTagStatus("Saved");
+  });
+
 });
