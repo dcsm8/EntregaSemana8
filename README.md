@@ -15,7 +15,7 @@
 ## Exploratory testing
 
 40 exploratory tests
-Open the [README](./exploratory-testing/README.md) for more info
+Open the exploratory-testing folder for more info
 
 ## Monkey testing
 
