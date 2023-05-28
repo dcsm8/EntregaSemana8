@@ -135,4 +135,63 @@ test.describe("Posts Random", () => {
     // Then
     await postPage.expectNotificationShown("Updated");
   });
+
+  test("Update post - beyond boundary", async () => {
+    postPage.testName = "update-post-beyond-boundary";
+    // Given
+    const { title: beyondBoundaryTitle, content: beyondBoundaryContent } = PostDataGenerator.getValidPostData();
+    const postId = await postPage.createPost(beyondBoundaryTitle, beyondBoundaryContent);
+    const updatedPost = PostDataGenerator.getBoundaryPostDataPlusOne();
+
+    // When
+    await postPage.updatePostById(postId, updatedPost);
+
+    // Then
+    await postPage.expectTitleUpdateErrorMessage();
+  });
+
+  test("Delete post - boundary", async () => {
+    postPage.testName = "delete-post-boundary";
+    // Given
+    const { title: boundaryTitle, content: boundaryContent } = PostDataGenerator.getValidPostData();
+    const postId = await postPage.createPost(boundaryTitle, boundaryContent);
+
+    // When
+    await postPage.deletePostById(postId);
+    await postPage.navigateToPostById(postId);
+
+    // Then
+    const errorCode = await postPage.getErrorMessageText();
+    expect(errorCode).toBe("404");
+  });
+
+  test("Read post - boundary", async () => {
+    postPage.testName = "read-post-boundary";
+    // Given
+    const { title, content } = PostDataGenerator.getBoundaryPostData();
+    const postId = await postPage.createPost(title, content);
+
+    // When
+    await postPage.navigateToPostById(postId);
+
+    // Then
+    const postTitle = await postPage.getPostTitle();
+    const postContent = await postPage.getPostContent();
+    expect(postTitle).toBe(title);
+    expect(postContent).toBe(content);
+  });
+
+  test("Create draft - boundary", async () => {
+    postPage.testName = "create-draft-boundary";
+    // Given
+    const { title: boundaryTitle, content: boundaryContent } = PostDataGenerator.getBoundaryPostData();
+
+    // When
+    await postPage.navigateToPostEditor();
+    await postPage.fillPostTitle(boundaryTitle);
+    await postPage.fillPostContent(boundaryContent);
+
+    // Then
+    await postPage.expectPostStatus("Draft");
+  });
 });
