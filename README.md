@@ -59,7 +59,7 @@ Open the [README](./playwright-data-generation-v3.41.1/README.md) for more info
 
 30 apriori tests with kraken
 41 random tests with kraken
-Open the [README](./playwright-data-generation-v3.41.1/kraken_v3/README.md) for more info
+Open the [README](./kraken-data-generation-v3.41.1/kraken_v3/README.md) for more info
 
 
 
