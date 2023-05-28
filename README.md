@@ -53,8 +53,8 @@ Open the [README](./playwright-regression-testing-v3.41.1-v.4.40.0/README.md) fo
 
 ## Data generation V3.41.1
 
-16 apriori tests
-35 random tests
+16 apriori tests with playwright
+35 random tests with playwright
 Open the [README](./playwright-data-generation-v3.41.1/README.md) for more info
 
 
