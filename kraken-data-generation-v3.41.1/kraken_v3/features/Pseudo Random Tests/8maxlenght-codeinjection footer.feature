@@ -2,7 +2,7 @@ Feature: Insertar codigo custom
 
 @user1 @web
 Scenario: Insertar codigo custom 
-    Given I navigate to page "http://localhost:2368/ghost/#/signin"
+    Given I navigate to page "http://localhost:3001/ghost/#/signin"
     And I wait for 3 seconds
     When I enter email ghost "<GHOSTUSER>"
     And I wait for 2 seconds
