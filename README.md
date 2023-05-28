@@ -57,7 +57,7 @@ Mayor informacion en [README](./kraken-data-generation-v3.41.1/kraken_v3/README.
 ## kraken-e2e-testing-v4.40.0 (Pruebas E2E)
 Este proyecto contiene la implementacion de pruebas de extremo a extremo con la herramienta Kraken para la version 4.40.0 d Ghost. 
 Se tiene 20 escenario de pruebas identificados.
-Mayor informacion en [README](./kraken-data-generation-v3.41.1/kraken_v3/README.md) for more info
+Mayor informacion en [README](./kraken-e2e-testing-v4.40.0/kraken/README.md) for more info
 
 ## playwright-data-generation-v3.41.1 (Pruebas a priori, Pruebas aleatorias)
 Con Playwright realizamos pruebas para generar datos sobre los formulario de Ghost v.3.41.0 con datos a priori y con datos aleatorios. Tenemos un total de 16 pruebas con datos a priori y 35 con datos aleatorios
