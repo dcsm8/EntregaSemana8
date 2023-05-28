@@ -33,7 +33,7 @@ Open the [README](./ripuppet-ripper-testing-v3.41.1/README.md) for more info
 Open the [README](./playwright-e2e-testing-v3.41.1/README.md) for more info
 
 20 tests with kraken
-Open the [README](./kraken-e2e-testing-v3.41.1/README.md) for more info
+Open the [README](./kraken-data-generation-v3.41.1/kraken_v3/README.md) for more info
 
 
 ## E2E testing V4.40.0
@@ -42,7 +42,7 @@ Open the [README](./kraken-e2e-testing-v3.41.1/README.md) for more info
 Open the [README](./playwright-regression-testing-v3.41.1-v.4.40.0/README.md) for more info
 
 10 tests with kraken
-Open the [README](./kraken-e2e-testing-v4.40.0/kraken_v3/README.md) for more info
+Open the [README](./kraken-e2e-testing-v4.40.0/kraken/README.md) for more info
 
 
 ## Regression testing V3.41.1 and V4.40.0
