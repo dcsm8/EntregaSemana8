@@ -47,7 +47,13 @@ Open the [README](./kraken-e2e-testing-v4.40.0/kraken_v3/README.md) for more inf
 
 ## Regression testing V3.41.1 and V4.40.0
 
-34 tests with playwright
+34 tests with playwright and a visual regression script
+Open the [README](./playwright-regression-testing-v3.41.1-v.4.40.0/README.md) for more info
+
+
+## Data generation V3.41.1
+
+34 tests with playwright and a visual regression script
 Open the [README](./playwright-regression-testing-v3.41.1-v.4.40.0/README.md) for more info
 
 
