@@ -2,7 +2,7 @@ Feature: Crear una nueva integracion Y despues crear una integracion con el mism
 
 @user1 @web
 Scenario: Como primer usuario una nueva integracion y creo una segunda integracion con el mismo nombre 
-    Given I navigate to page "http://localhost:2368/ghost/#/signin"
+    Given I navigate to page "http://localhost:3001/ghost/#/signin"
     And I wait for 3 seconds
     When I enter email ghost "<GHOSTUSER>"
     And I wait for 2 seconds
